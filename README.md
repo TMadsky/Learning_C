@@ -5,3 +5,6 @@ Day 1
 
 Day 2
     I made a Basic Sigma Calculator and a Student System
+
+Day 3
+    Idk what to do
