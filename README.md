@@ -12,3 +12,8 @@ Day 3
 Day4
     To Day I Will Rest
 
+Day 5
+    I coudn't made any progress cause of personal reasons
+
+Day 6
+    I will repeat what i done this weak
