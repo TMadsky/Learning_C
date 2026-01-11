@@ -36,10 +36,8 @@ int main(){
     printf("\n\nProduct Id :%d\n",product1.id);
     printf("Product Name :%s\n",product1.name);
     printf("Product Price :%f\n",product1.price);
-    pC=pC+1;
     }
     else if(AaA == 2){
-    int arr[pC];    
     printf("Product Id :%d\n",product1.id);
     printf("Product Name :%s\n",product1.name);
     printf("Product Price :%f\n",product1.price);
