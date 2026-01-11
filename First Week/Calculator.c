@@ -13,8 +13,6 @@ int main(){
     float second;
     scanf("%f", &second);
 
-
-
     float Ad = first+second;
     printf("Addition: %.1f", Ad);
 

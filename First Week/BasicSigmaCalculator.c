@@ -17,6 +17,5 @@ int main(){
     for(float i = DownPart; i > UpPart; i= MidPart){
         printf("Current Value: %.2f\n", i);
     }
-
     return 0;
 }

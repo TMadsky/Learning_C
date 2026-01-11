@@ -17,3 +17,5 @@ Day 5
 
 Day 6
     I will repeat what i done this weak
+Day 7 
+    
