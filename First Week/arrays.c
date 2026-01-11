@@ -19,7 +19,6 @@ int main(){
         }
     }
 
-
     printf("Max %.2f\n", max);
     printf("Min %.2f\n", min); 
     return 0;
