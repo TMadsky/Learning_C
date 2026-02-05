@@ -15,12 +15,11 @@ void producta(struct product * product){
 
     printf("Product Price: ");
     scanf("%f",&product->price);
-
 }
 
 int main(){
     int pC = 0;//?ProductCount  
-    int AaA; 
+    int AaA; //?sellection
     struct product product1;
  while(1){
     
