@@ -30,27 +30,27 @@ int main(){
     
     
     scanf("%d",&AaA);
-    if(AaA == 1){
+if(AaA == 1){
     
     producta(&product1);
     printf("\n\nProduct Id :%d\n",product1.id);
     printf("Product Name :%s\n",product1.name);
     printf("Product Price :%f\n",product1.price);
-    pC=pC+1;
-    }
-    else if(AaA == 2){
-    int arr[pC];    
+pC=pC+1;
+}
+else if(AaA == 2){
+int arr[pC];    
     printf("Product Id :%d\n",product1.id);
     printf("Product Name :%s\n",product1.name);
     printf("Product Price :%f\n",product1.price);
     
-    }
-    else if(AaA == 3){
-        break;
-    }
-    else{
-        printf("Unidentified Number Please Try Again\n");
-    };
+}
+else if(AaA == 3){
+break;
+}
+else{
+    printf("Unidentified Number Please Try Again\n");
+};
     
     
 }

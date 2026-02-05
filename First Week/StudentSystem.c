@@ -6,7 +6,6 @@ struct Student{
     char Name[30];
     int Age;
     bool Gender;
-
 };
 
 struct Teacher{
@@ -57,7 +56,7 @@ int main(){
 
     addStudent(&student1);
     addTeacher(&teacher1);
-
+    
     const char *studentGender = student1.Gender ? "Male" : "Female";
     const char *teacherGender = teacher1.Gender ? "Male" : "Female";
 
