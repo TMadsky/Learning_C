@@ -21,7 +21,7 @@ void addAccount(struct Account *account){
 
 
 
-int main(){
+int main(){//!MAIN
 struct Account account1 = {0, "None", 0.0f};
 int isCreated = 0;
 int choice;
@@ -36,7 +36,7 @@ while(1){
     printf("------------------------\n");
 if(choice == 1)//!TODO CREATING ACCOUNT
 {
-printf("You Crated An Account\n");
+    printf("You Crated An Account\n");
 addAccount(&account1);
 isCreated = 1;
 }
