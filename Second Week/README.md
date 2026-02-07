@@ -8,4 +8,9 @@ I made a bank system which users can do 5 diffirent things
 
 Things i will do in future:
 I want to add a password mechanic and improve everyting i done in version 1, also i want to save account in to folder, and inside of folder will be printed all withdraws and deposits.
+
 (version 2)
+I made the password mechanics 
+
+(version 3)
+I will learn how to make txt folders and save it
