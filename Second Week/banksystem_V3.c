@@ -67,10 +67,10 @@ char ReceiptName[55];
     scanf("%s", uReceiptName);
     sprintf(ReceiptName, "%s.txt", uReceiptName);
 
-    FILE *Receipt = fopen(ReceiptName, "w");
+FILE *Receipt = fopen(ReceiptName, "w");
     if(Receipt != NULL){
         fprintf(Receipt, "Transaction Amount: %.2f\n", amount);
-    fclose(Receipt);
+fclose(Receipt);
         printf("Receipt Saved As %s\n", ReceiptName);
     }
 }
@@ -130,7 +130,7 @@ char re;
 re = Nbalance;
 acc1.aCbalance+=Nbalance;
     printf("Your Successfuly Deposited To Your Account Your New Balance: %.2f\n", acc1.aCbalance);
-    printf("If You Want Recepit Press 1 If You Don't Want A Recepit Press 2");
+    printf("If You Want Recepit Press 1 If You Don't Want A Recepit Press 2: ");
     scanf("%d", &r);
 if(r == 1){
 receipt(re);
