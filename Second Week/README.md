@@ -13,4 +13,4 @@ I want to add a password mechanic and improve everyting i done in version 1, als
 I Added the password mechanics 
 
 (version 3)
-I Added receipt system 
+I Added receipt system (I upgraded the system now in the receipt users name number balance is shown)
