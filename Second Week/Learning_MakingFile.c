@@ -6,7 +6,10 @@ scanf("%s", n);
 sprintf(fn, "%s.txt", n);
 
 FILE *ab = fopen(fn, "w");
+char eee;
+scanf("%s", &eee);
+fprintf(ab, "%s", &eee);
+fprintf(ab, "gge");
 
-fprintf(ab, "Bank");
 fclose(ab);
 }

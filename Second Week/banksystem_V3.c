@@ -59,7 +59,7 @@ return 0;
 
 
 
-void receipt(float amount){
+void receipt(float amount, char *name, int number, float balance){
 char uReceiptName[50];
 char ReceiptName[55];
 
@@ -69,7 +69,10 @@ char ReceiptName[55];
 
 FILE *Receipt = fopen(ReceiptName, "w");
     if(Receipt != NULL){
+        fprintf(Receipt, "Account Name: %s\n", name);
+        fprintf(Receipt, "Account Number: %d\n", number);
         fprintf(Receipt, "Transaction Amount: %.2f\n", amount);
+        fprintf(Receipt, "Account Balalnce: %.2f\n", balance);
 fclose(Receipt);
         printf("Receipt Saved As %s\n", ReceiptName);
     }
@@ -82,6 +85,7 @@ int choice;
 int Hc=0;
 struct acCreate acc1= {"None", 0, 0.0f, "0000"};
 while(1){
+ 
     printf("-------------------");
     printf("Welcome To X bank");
     printf("-------------------\n");
@@ -126,14 +130,14 @@ float Nbalance;
     printf("Your Current Balance: %.2f\n", acc1.aCbalance);
     printf("Enter Amunt Of Money You Want To Deposit\n");
     scanf("%f", &Nbalance);
-char re;
+float re;
 re = Nbalance;
 acc1.aCbalance+=Nbalance;
     printf("Your Successfuly Deposited To Your Account Your New Balance: %.2f\n", acc1.aCbalance);
     printf("If You Want Recepit Press 1 If You Don't Want A Recepit Press 2: ");
     scanf("%d", &r);
 if(r == 1){
-receipt(re);
+receipt(re, acc1.aCName, acc1.aCNumber, acc1.aCbalance);
 }
 }
 }
@@ -151,7 +155,7 @@ float Nbalance;
     printf("Your Current Balance: %.2f\n", acc1.aCbalance);
     printf("Enter Amunt Of Money You Want To Withdraw\n");
     scanf("%f", &Nbalance);
-char re;
+float re;
 re = Nbalance;
 if(Nbalance>acc1.aCbalance){
     printf("You Don't Have That Much Money Please Change Amount Of Money You Want To Withdraw\n");
@@ -160,9 +164,9 @@ else{
 acc1.aCbalance-=Nbalance;
     printf("Your Successfuly Deposited To Your Account Your New Balance: %.2f\n", acc1.aCbalance);
     printf("If You Want Recepit Press 1 If You Don't Want A Recepit Press 2\n");
-    scanf("%d", r);
+    scanf("%d", &r);
 if(r == 1){
-receipt(re);
+receipt(re, acc1.aCName, acc1.aCNumber, acc1.aCbalance);
 }
 break;
 }
